@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Pokemon Trainer</title>
+
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #FAFAFA;
+      font-family: 'Arial', sans-serif;
+    }
+    button {
+      margin: 5px;
+      padding: 10px 20px;
+      font-size: 18px;
+      border: none;
+      border-radius: 5px;
+      background-color: #007BFF;
+      color: #FFFFFF;
+      cursor: pointer;
+    }
+    input {
+      margin: 5px;
+      padding: 10px;
+      font-size: 18px;
+    }
+    p {
+      font-size: 20px;
+    }
+    h1 {
+      color: #007BFF;
+    }
+    #trainerName, #trainerAge, #createPokemonResponse, #talkResponse, #tackleResponse {
+      color: #FFFFFF;
+      background-color: #007BFF;
+      padding: 5px;
+      border-radius: 5px;
+    }
+    .button-container {
+      display: flex;
+      justify-content: center;
+    }
+  </style>
+</head>
+<body>
+
+<h1>Pokemon Trainer</h1>
+
+<p id="trainerName"></p>
+<img src="Ash.jpg" alt="Ash" width="400" height="400">
+<p id="trainerAge"></p>
+
+<input id="pokemonName" type="text" placeholder="Enter a Pokemon name">
+<button onclick="setTargetPokemon()">Set Target Pokemon</button>
+<p id="createPokemonResponse"></p>
+
+<div class="button-container">
+  <button onclick="talk()">Talk</button>
+  <button onclick="tackle()">Tackle</button>
+</div>
+<p id="talkResponse"></p>
+<p id="tackleResponse"></p>
+
+<script src="script.js"></script>
+<style>
+    body {
+      background-image: url('Bg.jpg');
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+    }
+    </style>
+</body>
+</html>
