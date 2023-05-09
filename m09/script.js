@@ -45,6 +45,7 @@ function Pokemon(name, level) {
 
     this.faint = function(targetPokemon) {
         console.log(`${targetPokemon.name} has fainted.`);
+        document.getElementById('faintResponse').textContent = `${targetPokemon.name} has fainted.`;
     };
 }
 
